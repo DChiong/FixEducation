@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Solution | FixEducation - Offline Learning App</title>
+    <meta name="description" content="Discover how FixEducation's offline learning platform helps students without internet access continue their education with interactive, engaging content.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4f46e5",
+                        secondary: "#10b981",
+                        accent: "#f59e0b",
+                        dark: "#1e293b",
+                        light: "#f8fafc",
+                        "edu-blue": "#2563eb",
+                        "edu-green": "#059669",
+                        "edu-purple": "#7c3aed"
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'system-ui', 'sans-serif'],
+                        'body': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'pulse-slow': 'pulse 3s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-white font-body text-gray-800">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-bold text-dark font-heading">Fix<span class="text-primary">Education</span></span>
+                        <p class="text-xs text-gray-500 -mt-1">College of Computing Studies</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#overview" class="text-gray-600 hover:text-primary transition-colors font-medium" onclick="handleNavigation(event, 'overview')">Overview</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-primary transition-colors font-medium" onclick="handleNavigation(event, 'how-it-works')">How It Works</a>
+                    <a href="#platforms" class="text-gray-600 hover:text-primary transition-colors font-medium" onclick="handleNavigation(event, 'platforms')">Platforms</a>
+                    <a href="#features" class="text-gray-600 hover:text-primary transition-colors font-medium" onclick="handleNavigation(event, 'features')">Key Features</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-primary transition-colors font-medium" onclick="handleNavigation(event, 'benefits')">Benefits</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="hidden md:inline-block px-6 py-2 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-indigo-50 transition-colors" onclick="handleNavigation(event, 'demo')">Request Demo</button>
+                    <button class="px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-indigo-600 transition-colors shadow-sm" onclick="handleNavigation(event, 'contact')">Get Started</button>
+                </div>
+                
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="solution-gradient">
+        <div class="container mx-auto px-4 py-16 md:py-20">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading text-dark">Our Innovative Solution</h1>
+                <p class="text-xl mb-8 text-gray-600 max-w-3xl mx-auto">A comprehensive offline learning platform designed specifically for students in areas with limited or no internet connectivity.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-indigo-600 transition-colors shadow-lg" onclick="handleNavigation(event, 'demo')">Watch Platform Demo</button>
+                    <button class="px-8 py-3 bg-white border-2 border-primary text-primary font-semibold rounded-lg hover:bg-indigo-50 transition-colors" onclick="handleNavigation(event, 'platforms')">Explore Platforms</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <h2 class="text-3xl font-bold text-dark mb-6 font-heading">The FixEducation Platform</h2>
+                    <p class="text-gray-600 mb-6">Our solution is a multi-platform offline learning system that brings quality education to students regardless of their internet connectivity. We've designed a complete ecosystem that works seamlessly without requiring constant internet access.</p>
+                    <p class="text-gray-600 mb-8">The platform combines interactive learning modules, progress tracking, and teacher support tools—all accessible offline once downloaded. Content updates are distributed through low-bandwidth methods when internet is available.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-light p-6 rounded-xl">
+                            <div class="text-3xl font-bold text-primary mb-2">100%</div>
+                            <p class="text-gray-600">Offline Functionality</p>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl">
+                            <div class="text-3xl font-bold text-secondary mb-2">3+</div>
+                            <p class="text-gray-600">Platform Support</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+                        <img src="image1.png" alt="FixEducation platform interface showing offline learning modules" class="w-43 mx-auto my-6 rounded-xl shadow-lg" loading="lazy">
+                    </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4 font-heading">How FixEducation Works</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Simple three-step process to bring offline learning to your students</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="step-number bg-primary/10 text-primary">1</div>
+                        <h3 class="text-xl font-semibold text-dark">Content Download</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Schools with internet access download the complete learning package including lessons, exercises, and assessments.</p>
+                    <div class="flex items-center text-primary">
+                        <i class="fas fa-cloud-download-alt mr-2"></i>
+                        <span class="font-medium">Download once, use forever</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="step-number bg-secondary/10 text-secondary">2</div>
+                        <h3 class="text-xl font-semibold text-dark">Offline Distribution</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Content is transferred to student devices via USB, SD cards, or local WiFi networks—no internet required.</p>
+                    <div class="flex items-center text-secondary">
+                        <i class="fas fa-wifi-slash mr-2"></i>
+                        <span class="font-medium">Works completely offline</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="step-number bg-accent/10 text-accent">3</div>
+                        <h3 class="text-xl font-semibold text-dark">Learning & Progress</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Students learn interactively while the app tracks progress. Data syncs when internet becomes available.</p>
+                    <div class="flex items-center text-accent">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        <span class="font-medium">Progress tracking included</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="platforms" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4 font-heading">Multi-Platform Support</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Accessible on the devices your students already have</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="platform-card border-l-4 border-primary bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="feature-icon bg-primary/10 text-primary">
+                        <i class="fas fa-mobile-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Mobile App</h3>
+                    <p class="text-gray-600 mb-6">Native Android application optimized for low-end smartphones with limited storage.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <span>Works on Android 5.0+</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <span>Requires only 100MB storage</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <span>Touch-optimized interface</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card border-l-4 border-secondary bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="feature-icon bg-secondary/10 text-secondary">
+                        <i class="fas fa-laptop text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Desktop Application</h3>
+                    <p class="text-gray-600 mb-6">Windows application for school computer labs and personal computers.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary mr-2"></i>
+                            <span>Windows 7/8/10/11 support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary mr-2"></i>
+                            <span>Full-screen learning mode</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-secondary mr-2"></i>
+                            <span>Keyboard navigation</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card border-l-4 border-accent bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="feature-icon bg-accent/10 text-accent">
+                        <i class="fas fa-tablet-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Tablet Version</h3>
+                    <p class="text-gray-600 mb-6">Optimized for educational tablets and larger screen devices.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>7-10 inch screen optimized</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Multi-user support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent mr-2"></i>
+                            <span>Parental controls</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4 font-heading">Key Platform Features</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Designed specifically for offline learning environments</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="feature-icon bg-blue-50 text-edu-blue">
+                        <i class="fas fa-book-open text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Interactive Lessons</h3>
+                    <p class="text-gray-600">Engaging multimedia lessons with videos, images, and interactive exercises that work completely offline.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="feature-icon bg-green-50 text-edu-green">
+                        <i class="fas fa-tasks text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Progress Tracking</h3>
+                    <p class="text-gray-600">Automatic tracking of student progress, quiz scores, and completion rates—syncs when online.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="feature-icon bg-purple-50 text-edu-purple">
+                        <i class="fas fa-gamepad text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Gamified Learning</h3>
+                    <p class="text-gray-600">Points, badges, and leaderboards to motivate students and make learning fun and competitive.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="feature-icon bg-yellow-50 text-accent">
+                        <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Teacher Dashboard</h3>
+                    <p class="text-gray-600">Comprehensive dashboard for teachers to monitor class progress and identify struggling students.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="feature-icon bg-red-50 text-red-500">
+                        <i class="fas fa-language text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Multi-language</h3>
+                    <p class="text-gray-600">Support for English and Filipino languages with more regional languages in development.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="feature-icon bg-indigo-50 text-primary">
+                        <i class="fas fa-sync-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-4">Smart Sync</h3>
+                    <p class="text-gray-600">Intelligent synchronization that uses minimal data when internet becomes available briefly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4 font-heading">Benefits for Schools & Students</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Transforming education in low-connectivity areas</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                                <i class="fas fa-universal-access text-primary text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark">Equal Learning Opportunities</h3>
+                        </div>
+                        <p class="text-gray-600">Students in remote areas receive the same quality educational content as those in urban centers with reliable internet.</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mr-4">
+                                <i class="fas fa-money-bill-wave text-secondary text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark">Cost-Effective Solution</h3>
+                        </div>
+                        <p class="text-gray-600">Eliminates the need for expensive internet infrastructure and data plans, making digital education affordable.</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
+                                <i class="fas fa-user-graduate text-accent text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark">Improved Learning Outcomes</h3>
+                        </div>
+                        <p class="text-gray-600">Interactive, self-paced learning leads to better understanding and retention compared to traditional methods.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-6 font-heading">Ready to Transform Your School?</h3>
+                        <p class="text-gray-600 mb-8">Join hundreds of schools already using FixEducation to provide quality offline learning to their students.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold text-dark mb-1">Free Pilot Program</h4>
+                                    <p class="text-gray-600 text-sm">Test the platform with 50 students for 3 months at no cost</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold text-dark mb-1">Teacher Training</h4>
+                                    <p class="text-gray-600 text-sm">Comprehensive training for your teaching staff</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold text-dark mb-1">Technical Support</h4>
+                                    <p class="text-gray-600 text-sm">Dedicated support team to ensure smooth implementation</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full mt-8 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-indigo-600 transition-colors" onclick="handleNavigation(event, 'contact')">
+                            Start Free Pilot Program
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 font-heading">Ready to Bring Offline Learning to Your Students?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-100">Schedule a personalized demo to see how FixEducation can work for your school.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg" onclick="handleNavigation(event, 'demo')">
+                    <i class="fas fa-calendar-alt mr-2"></i> Schedule Demo
+                </button>
+                <button class="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors" onclick="handleNavigation(event, 'contact')">
+                    <i class="fas fa-envelope mr-2"></i> Contact Our Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold font-heading">Fix<span class="text-primary">Education</span></span>
+                            <p class="text-xs text-gray-400 -mt-1">College of Computing Studies</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">Bringing quality education to students without internet access through innovative offline learning solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 font-heading">Platform</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'features')">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'platforms')">Platforms</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'pricing')">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'demo')">Demo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 font-heading">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'documentation')">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'guides')">Teacher Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'faq')">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="handleNavigation(event, 'blog')">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6 font-heading">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>contact@fixeducation.ph</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+63 2 1234 5678</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            <span>Manila, Philippines</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 FixEducation. All rights reserved. | College of Computing Studies Project</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Define navigation data
+        const pageSections = {
+            "overview": "overview",
+            "how-it-works": "how-it-works",
+            "platforms": "platforms",
+            "features": "features",
+            "benefits": "benefits",
+            "demo": "demo",
+            "contact": "contact",
+            "pricing": "pricing",
+            "documentation": "documentation",
+            "guides": "guides",
+            "faq": "faq",
+            "blog": "blog"
+        };
+        
+        // Navigation handler
+        function handleNavigation(event, sectionId) {
+            event.preventDefault();
+            
+            if (sectionId === "demo") {
+                alert("Demo request form would open here. In a real implementation, this would show a modal or redirect to a demo scheduling page.");
+                return;
+            }
+            
+            if (sectionId === "contact") {
+                alert("Contact form would open here. In a real implementation, this would show a contact modal or redirect to a contact page.");
+                return;
+            }
+            
+            // For other sections, scroll to them
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // If section doesn't exist on this page, show appropriate message
+                if (["pricing", "documentation", "guides", "faq", "blog"].includes(sectionId)) {
+                    alert("This section is not available on the solution page. It would be available on other pages of the website.");
+                }
+            }
+        }
+        
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    alert("Mobile menu would open here. In a real implementation, this would toggle a mobile navigation menu.");
+                });
+            }
+            
+            // Add smooth scrolling to all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== "#") {
+                        const targetId = href.substring(1);
+                        if (pageSections[targetId]) {
+                            e.preventDefault();
+                            handleNavigation(e, targetId);
+                        }
+                    }
+                });
+            });
+        });
+        
+        // Demo request function
+        function requestDemo() {
+            const name = prompt("Enter your name:");
+            const school = prompt("Enter your school name:");
+            const email = prompt("Enter your email address:");
+            
+            if (name && school && email) {
+                alert(`Thank you ${name}! We've received your demo request for ${school}. We'll contact you at ${email} within 24 hours.`);
+            }
+        }
+        
+        // Contact form function
+        function openContactForm() {
+            alert("Contact form modal would open here. In a real implementation, this would display a form with name, email, message, and submit button.");
+        }
+    </script>
+</body>
+</html>

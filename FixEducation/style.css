@@ -1,0 +1,37 @@
+
+.solution-gradient {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 50%, #d1fae5 100%);
+}
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+.step-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.platform-card {
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+}
+.platform-card:hover {
+    transform: translateX(5px);
+}
